@@ -51,6 +51,21 @@ SELECT DISTINCT
       from bright_tv.customers.dataset;
       -------------------------------------------------------------------------------------
 
+      SELECT Count (*),
+             UserID
+             FROM bright_tv.customers.dataset
+             GROUP BY UserID
+             HAVING Count(*)>1;
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
       SELECT * FROM bright_tv.customers.viewership;
       
      SELECT RecordDate2,
@@ -61,7 +76,6 @@ SELECT DISTINCT
          ELSE '01.Weekday'
          END AS Day_Type
          FROM bright_tv.customers.viewership;
-
 
 
 
